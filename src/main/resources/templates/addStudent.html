@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout/main.html">
+<head>
+    <title>Home page</title>
+</head>
+<div layout:fragment="content">
+    <form action="/add-student" method="post">
+        <div class="mb-3">
+            <label for="exampleInputName1" class="form-label">just name</label>
+            <input name="name" type="text" class="form-control" id="exampleInputName1" aria-describedby="textHelp">
+            <div id="textHelp" class="form-text">bim bim bam bam</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputSurname1" class="form-label">just surname</label>
+            <input name="surname" type="text" class="form-control" id="exampleInputSurname1">
+        </div>
+        <div class="mb-3">
+            <label name="exam" for="examInput" class="form-label">exam mark pls</label>
+            <input type="number" class="form-control" id="examInput">
+        </div>
+        <button type="submit" class="btn btn-dark">add him</button>
+    </form>
+</div>
+</html>
