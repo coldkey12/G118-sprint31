@@ -29,7 +29,6 @@ public class HomeController {
     @PostMapping("/add-student")
     public String addStudent(Student student){
         DbManager.addStudent(student);
-        log.info(student.getMark());
         return "redirect:/";
     }
 
